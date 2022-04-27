@@ -1,0 +1,3 @@
+{
+    "item":"<div class=col-lg-6><div class=card><img alt=#nome class=card-img-top src=#imagem><div class=card-body><h5 class=card-title>#nome</h5><p class=card-text><strong>Valor:</strong>#valor<div class='d-grid gap-2'><a class='btn btn-contact' href='https://api.whatsapp.com/send?phone=55 #whatsapp &text=Olá gostaria de informações sobre o imóvel: #nome' target=_blank>Contato Proprietário</a></div></div></div></div>"
+}
