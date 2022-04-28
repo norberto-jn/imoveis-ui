@@ -1,9 +1,17 @@
 header{
-    background-color: #3E007D;;
+    background-color: #3E007D;
     background-position: center;
     background-size: cover;
     height: 60px;
     border-bottom: 5px solid #f8931d;
+}
+
+nav div{
+    background-color: #3E007D;
+}
+
+.c-text-menu{
+    color: #fff !important;
 }
 
 .logo{
