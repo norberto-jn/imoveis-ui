@@ -1,5 +1,5 @@
 const template = {
-    item: "<div class=col-lg-6><div class=card><img alt=#nome class=card-img-top src=#imagem><div class=card-body><h5 class=card-title>#nome</h5><p class=card-text><strong>Valor:</strong>#valor<div class='d-grid gap-2'><a class='btn btn-contact' href='https://api.whatsapp.com/send?phone=55 #whatsapp &text=Olá gostaria de informações sobre o imóvel: #nome' target=_blank>Contato Proprietário</a></div></div></div></div>",
+    item: "<div class=col-lg-6><div class=card><img alt=#nome class=card-img-top src=#imagem><div class=card-body><h5 class=card-title>#nome</h5><p>#detalhe</p><p class=card-text><strong>Valor:</strong>#valor<div class='d-grid gap-2'><a class='btn btn-contact' href='https://api.whatsapp.com/send?phone=55 #whatsapp &text=Olá gostaria de informações sobre o imóvel: #nome' target=_blank>Contato Proprietário</a></div></div></div></div>",
     alert: "<div class='alert alert-warning' role='alert'>Desculpe. Ainda não temos imóveis cadastrados!</div>",
     alert_not_registered: "<div class='row'><div class='col-12'><div class='alert alert-warning' role='alert'>Desculpe. Não temos imóveis para esta categoria.</div></div></div>"
 }
@@ -44,7 +44,7 @@ ajax.onreadystatechange = function () {
 
                     for (let j = 0; j < data_json[i].imoveis.length; j++) {
 
-                        html_content += card_imoveis(data_json[i].imoveis[j].nome, data_json[i].imoveis[j].imagem, data_json[i].imoveis[j].valor, data_json[i].imoveis[j].whatsapp)
+                        html_content += card_imoveis(data_json[i].imoveis[j].nome, data_json[i].imoveis[j].imagem, data_json[i].imoveis[j].valor, data_json[i].imoveis[j].whatsapp, data_json[i].imoveis[j].address)
 
                     }
 
@@ -61,13 +61,14 @@ ajax.onreadystatechange = function () {
 }
 
 //Template Card Imoveis
-var card_imoveis = function (nome, imagem, valor, whatsapp) {
+var card_imoveis = function (nome, imagem, valor, whatsapp, address) {
 
     return template.item
         .replace(/#nome/ig, nome)
         .replace(/#imagem/ig, imagem)
         .replace(/#valor/ig, valor)
         .replace(/#whatsapp/ig, whatsapp)
+        .replace(/#detalhe/ig, address.logradouro)
 }
 
 //Construir o cache dinâmico
@@ -86,7 +87,7 @@ var cache_dinamico = function (data_json) {
                 for (let i = 0; i < data_json.length; i++) {
                     for (let j = 0; j < data_json[i].imoveis.length; j++) {
                         if (files.indexOf(data_json[i].imoveis[j].imagem) == -1) {
-                           files.push(data_json[i].imoveis[j].imagem)
+                            files.push(data_json[i].imoveis[j].imagem)
                         }
 
                     }

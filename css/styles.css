@@ -28,7 +28,11 @@ main{
 }
 
 .card{
-    margin-bottom: 20px;
+    margin-bottom: 20px;    
+}
+
+.card-img-top{
+   height: 17rem;
 }
 
 main h2{
