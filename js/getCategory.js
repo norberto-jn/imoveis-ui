@@ -1,4 +1,4 @@
-var url = "http://localhost:3000/category/sarch"
+var url = "https://localhost:7238/category"
 
 var http = new XMLHttpRequest()
 http.open("GET", url, true)
@@ -9,7 +9,7 @@ http.onreadystatechange = function () {
         let data_json = JSON.parse(http.responseText)
 
         for (const item of data_json) {
-            document.getElementById('category').innerHTML += '<option value='+item.code+'>'+item.categoria+'</option>'
+            document.getElementById('category').innerHTML += '<option value='+item.code+'>'+item.name+'</option>'
         }
     }
 }

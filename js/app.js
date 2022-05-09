@@ -7,7 +7,7 @@ const template = {
 //Carregamento AJAX
 let ajax = new XMLHttpRequest()
 
-ajax.open("GET", "http://localhost:3000/category/sarch", true)
+ajax.open("GET", "https://localhost:7238/category/search", true)
 
 ajax.send()
 

@@ -67,44 +67,44 @@
 
             <div class="col-12">
                 <label for="whatsapp" class="form-label">Telefone</label>
-                <input type="text" class="form-control" id="whatsapp" placeholder="(99) 9 9999-9999">
+                <input type="text" class="form-control" id="whatsapp" placeholder="(99) 9 9999-9999" onkeyup="mascaraTelefone()" required>
             </div>
 
             <div class="col-12">
                 <label for="value" class="form-label">Valor do imovel</label>
-                <input type="text" class="form-control" id="value" placeholder="">
+                <input type="text" class="form-control" id="value" placeholder="" required>
             </div>
 
             <div class="col-md-6">
                 <label for="category" class="form-label">Categoria</label>
-                <select id="category" class="form-select">
+                <select id="category" class="form-select" required>
                 </select>
             </div>
 
             <div class="col-md-6">
                 <label for="inputCity" class="form-label">CEP</label>
-                <input type="text" class="form-control" id="cep" onblur="pesquisacep(this.value);" >
+                <input type="text" class="form-control" id="cep" onkeyup="mascara_cep('cep')" onblur="pesquisacep(this.value);" required>
             </div>
-            
+
             <div class="col-md-6">
                 <label for="inputCity" class="form-label">Rua</label>
-                <input type="text" class="form-control" id="rua">
-            </div>     
-            
+                <input type="text" class="form-control" id="rua" required>
+            </div>
+
             <div class="col-md-6">
                 <label for="inputCity" class="form-label">Bairro</label>
-                <input type="text" class="form-control" id="bairro">
-            </div>  
+                <input type="text" class="form-control" id="bairro" required>
+            </div>
 
             <div class="col-md-6">
                 <label for="inputCity" class="form-label">Cidade</label>
-                <input type="text" class="form-control" id="cidade">
-            </div>  
+                <input type="text" class="form-control" id="cidade" required>
+            </div>
 
             <div class="col-md-6">
                 <label for="inputCity" class="form-label">Estado</label>
-                <input type="text" class="form-control" id="uf">
-            </div>  
+                <input type="text" class="form-control" id="uf" required>
+            </div>
 
             <div class="col-12">
                 <button type="button" class="btn btn-primary" onclick="saveProduct()">Salvar</button>
@@ -126,6 +126,8 @@
     <script src="js/getCep.js"></script>
     <script src="js/getCategory.js"></script>
     <script src="js/saveProduct.js"></script>
+    <script src="js/mascaraTelefone.js"></script>
+    <script src="js/cep.js"></script>
 
 
 </body>
