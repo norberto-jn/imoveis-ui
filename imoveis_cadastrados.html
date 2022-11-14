@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <link href="manifest.json" rel="manifest">
+
+    <!-- iOS meta tags and icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="App Moveis">
+    <link rel="apple-touch-icon" href="icons/152.png">
+
+    <meta name="description" content="App Moveis">
+    <meta name="theme-color" content="#f8931d" />
+
+    <title>App Moveis</title>
+</head>
+
+<body>
+
+    <header class="container-fluid fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand c-text-menu" href="index.html">@MobImovel</a>
+                <button class="nav-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active c-text-menu" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link c-text-menu" href="save.html">Cadastre seu imovel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link c-text-menu" href="imoveis_cadastrados.html">Imoveis cadastrados</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <img src="imgs/logo.png" class="logo">
+    </header>
+
+    <main class="container">
+        <table class="table">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">code</th>
+                    <th scope="col">name</th>
+                    <th scope="col">valor</th>
+                    <th scope="col">excluir</th>
+                    <th scope="col">editar</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider" id="content">
+             
+            </tbody>
+        </table>
+    </main>
+
+    <footer class="container-fluid fixed-bottom">
+        <div class="d-grid gap-2">
+            <button type="button" class="btn btn-warning" hidden id="btInstall">Instalar</button>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/listProduct.js"></script>
+    <script src="js/deleteProduct.js"></script>
+
+
+</body>
+
+</html>

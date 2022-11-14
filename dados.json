@@ -1,0 +1,59 @@
+[
+    {
+        "categoria":"Casas",
+        "imoveis":[
+            {
+                "nome":"Olho Tandera",
+                "imagem":"imgs/item_001.jpg",
+                "whatsapp":"319999999999",
+                "valor": "R$ 123.000,00"
+            },
+            {
+                "nome":"Exemplo Imovel 2",
+                "imagem":"imgs/item_002.jpg",
+                "whatsapp":"319999999999",
+                "valor": "R$ 140.000,00"
+            }                        
+        ]
+    },
+    {
+        "categoria":"Apartamentos",
+        "imoveis":[
+            {
+                "nome":"Exemplo Imovel 3",
+                "imagem":"imgs/item_003.jpg",
+                "whatsapp":"319999999999",
+                "valor": "R$ 50.000,00"
+            },
+            {
+                "nome":"Exemplo Imovel 4",
+                "imagem":"imgs/item_004.jpg",
+                "whatsapp":"319999999999",
+                "valor": "R$ 250.000,00"
+            }                        
+        ]
+    },
+    {
+        "categoria":"Lotes",
+        "imoveis":[
+            {
+                "nome":"Exemplo Imovel 5",
+                "imagem":"imgs/item_003.jpg",
+                "whatsapp":"319999999999",
+                "valor": "R$ 520.000,00"
+            },
+            {
+                "nome":"Exemplo Imovel 6",
+                "imagem":"imgs/item_004.jpg",
+                "whatsapp":"319999999999",
+                "valor": "R$ 120.000,00"
+            }                        
+        ]
+    },
+    {
+        "categoria":"Kitnetes",
+        "imoveis":[
+                       
+        ]
+    }          
+]
