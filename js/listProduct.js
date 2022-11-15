@@ -4,7 +4,7 @@ const template = {
 
 //Carregamento AJAX
 let ajax = new XMLHttpRequest()
-ajax.open("GET", "http://localhost:3000/categorys/search", true)
+ajax.open("GET", "https://app-imoveis-api.herokuapp.com/categorys/search", true)
 ajax.setRequestHeader("Authorization", `Bearer ${window.sessionStorage.getItem('token')}`)
 
 ajax.send()

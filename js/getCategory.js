@@ -1,4 +1,4 @@
-let urlCategory = "http://localhost:3000/categorys"
+let urlCategory = "https://app-imoveis-api.herokuapp.com/categorys"
 
 let httpCategory = new XMLHttpRequest()
 httpCategory.open("GET", urlCategory, true)

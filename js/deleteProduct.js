@@ -1,4 +1,4 @@
-var urlProduct = "http://localhost:3000/product"
+var urlProduct = "https://app-imoveis-api.herokuapp.com/product"
 
 function deleteProduct(code) {
     fetch(`${urlProduct}/${code}`, {
