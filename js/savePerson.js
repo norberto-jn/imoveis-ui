@@ -1,6 +1,4 @@
-//var urlProduct = "https://app-imoveis-api.herokuapp.com/product"
-var urlProduct = "http://localhost:3000/person"
-
+var urlProduct = "https://app-imoveis-api.herokuapp.com/person"
 
 async function savePerson() {
 
@@ -42,9 +40,9 @@ function save(name, cpf, cnpj, email, phone, password) {
     http.addEventListener("readystatechange", function () {
         if (this.readyState === this.DONE) {
             if (http.status == 201)
-                return document.getElementById('alert').innerHTML = '<div class="alert alert-success" role="alert">Imovel salvo com sucesso!</div>'
+                return document.getElementById('alert').innerHTML = '<div class="alert alert-success" role="alert">Cadastro feito com sucesso!</div>'
             else
-                return document.getElementById('alert').innerHTML = '<div class="alert alert-danger" role="alert">Infelizmente não foi possível salvar o imóvel!</div>'
+                return document.getElementById('alert').innerHTML = '<div class="alert alert-danger" role="alert">Infelizmente não foi possível fazer o cadastro!</div>'
         }
     })
 
